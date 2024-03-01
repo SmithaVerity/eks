@@ -11,7 +11,7 @@ resource "aws_nat_gateway" "gw1" {
 
   # A map of tags to assign to the resource.
   tags = {
-    Name = "NAT 1"
+    Name = "ciacts_eks_NAT1"
   }
 }
 
@@ -24,6 +24,6 @@ resource "aws_nat_gateway" "gw2" {
 
   # A map of tags to assign to the resource.
   tags = {
-    Name = "NAT 2"
+    Name = "ciacts_eks_NAT2"
   }
 }
