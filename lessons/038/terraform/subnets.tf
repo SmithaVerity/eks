@@ -9,14 +9,14 @@ resource "aws_subnet" "public_1" {
   cidr_block = "192.168.0.0/18"
 
   # The AZ for the subnet.
-  availability_zone = "us-east-1a"
+  availability_zone = "ap-south-1a"
 
   # Required for EKS. Instances launched into the subnet should be assigned a public IP address.
   map_public_ip_on_launch = true
 
   # A map of tags to assign to the resource.
   tags = {
-    Name                        = "public-us-east-1a"
+    Name                        = "public-ap-south-1a"
     "kubernetes.io/cluster/eks" = "shared"
     "kubernetes.io/role/elb"    = 1
   }
