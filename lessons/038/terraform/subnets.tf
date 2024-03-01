@@ -1,7 +1,7 @@
 # Resource: aws_subnet
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
 
-resource "aws_subnet" "ciacts_eks_public_1" {
+resource "aws_subnet" "public_1" {
   # The VPC ID.
   vpc_id = aws_vpc.main.id
 
@@ -22,7 +22,7 @@ resource "aws_subnet" "ciacts_eks_public_1" {
   }
 }
 
-resource "aws_subnet" "ciacts_eks_public_2" {
+resource "aws_subnet" "public_2" {
   # The VPC ID
   vpc_id = aws_vpc.main.id
 
@@ -43,7 +43,7 @@ resource "aws_subnet" "ciacts_eks_public_2" {
   }
 }
 
-resource "aws_subnet" "ciacts_eks_private_1" {
+resource "aws_subnet" "private_1" {
   # The VPC ID
   vpc_id = aws_vpc.main.id
 
@@ -61,7 +61,7 @@ resource "aws_subnet" "ciacts_eks_private_1" {
   }
 }
 
-resource "aws_subnet" "ciacts_eks_private_2" {
+resource "aws_subnet" "private_2" {
   # The VPC ID
   vpc_id = aws_vpc.main.id
 
