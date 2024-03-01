@@ -1,7 +1,7 @@
 # Resource: aws_vpc
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
 
-resource "aws_vpc" "ciacts_eks_vpc" {
+resource "aws_vpc" "main" {
   # The CIDR block for the VPC.
   cidr_block = "192.168.0.0/16"
 
@@ -25,7 +25,7 @@ resource "aws_vpc" "ciacts_eks_vpc" {
 
   # A map of tags to assign to the resource.
   tags = {
-    Name = "main"
+    Name = "ciacts_eks_vpc"
   }
 }
 
