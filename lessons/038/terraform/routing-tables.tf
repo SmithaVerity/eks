@@ -15,7 +15,7 @@ resource "aws_route_table" "public" {
 
   # A map of tags to assign to the resource.
   tags = {
-    Name = "public"
+    Name = "ciacts_eks_public"
   }
 }
 
@@ -33,7 +33,7 @@ resource "aws_route_table" "private1" {
 
   # A map of tags to assign to the resource.
   tags = {
-    Name = "private1"
+    Name = "ciacts_eks_private1"
   }
 }
 
@@ -51,6 +51,6 @@ resource "aws_route_table" "private2" {
 
   # A map of tags to assign to the resource.
   tags = {
-    Name = "private2"
+    Name = "ciacts_eks_private2"
   }
 }
