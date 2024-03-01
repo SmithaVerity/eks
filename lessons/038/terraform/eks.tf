@@ -72,3 +72,11 @@ resource "aws_eks_cluster" "eks" {
     aws_iam_role_policy_attachment.amazon_eks_cluster_policy
   ]
 }
+
+
+output "eks_cluster_name" {
+  value       = aws_eks_cluster.eks.name
+  description = "EKS Cluster Name."
+  # Setting an output value as sensitive prevents Terraform from showing its value in plan and apply.
+  sensitive = false
+}
