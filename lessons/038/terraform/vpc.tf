@@ -1,7 +1,7 @@
 # Resource: aws_vpc
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
 
-resource "aws_vpc" "main" {
+resource "aws_vpc" "ciacts_vpc" {
   # The CIDR block for the VPC.
   cidr_block = "192.168.0.0/16"
 
